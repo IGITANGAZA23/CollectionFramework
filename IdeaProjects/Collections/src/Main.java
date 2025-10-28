@@ -33,5 +33,20 @@ public class Main {
         System.out.println("Sorted descending: " + list);
 
         System.out.println("\n System Working well");
+
+
+
+        Set<String> animals = new TreeSet<>();
+
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Elephant");
+        animals.add("Ant");
+        animals.add("Cat"); // Duplicate ignored
+
+        System.out.println("TreeSet: " + animals);
+
+        animals.remove("Elephant");
+        System.out.println("After removing Elephant: " + animals);
     }
 }
